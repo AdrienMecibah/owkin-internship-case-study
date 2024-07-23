@@ -1,0 +1,400 @@
+{
+    "nb_variables": 18,
+    "nb_entries": 39,
+    "nb_values": 702,
+    "all_variables": [
+        "Patient ID",
+        "Center",
+        "Date of Birth",
+        "Sex",
+        "date of diagnosis",
+        "Smoking history",
+        "Pack years (PA)",
+        "Type of treatmetn",
+        "name of treatment",
+        "Line Of Treatment",
+        "Date of PSA level",
+        "PSA level",
+        "ab Value 1",
+        "Lab Value 2",
+        "Lab Value 3",
+        "Date of biobsy",
+        "Biopsy",
+        "Status"
+    ],
+    "non_compliant_variables": {
+        "PSA level": 3,
+        "Smoking history": 3,
+        "Date of Birth": 6
+    },
+    "non_compliant_entries": [
+        {
+            "index": 1,
+            "row": {
+                "Patient ID": 2,
+                "Center": "Owkin",
+                "Date of Birth": "05/10/1992",
+                "Sex": "Female",
+                "date of diagnosis": "27/04/1985",
+                "Smoking history": "Heavy smoker",
+                "Pack years (PA)": "60",
+                "Type of treatmetn": "IO",
+                "name of treatment": "Bortezomib",
+                "Line Of Treatment": "5",
+                "Date of PSA level": "12/12/2019",
+                "PSA level": "Uk",
+                "ab Value 1": "4.3",
+                "Lab Value 2": ".",
+                "Lab Value 3": "8.9",
+                "Date of biobsy": "29/01/1984",
+                "Biopsy": "bone",
+                "Status": "Alive"
+            },
+            "errors": [
+                {
+                    "check": "numeric",
+                    "variable": "PSA level",
+                    "message": "ValueError : could not convert string to float: 'Uk'",
+                    "parameters": {
+                        "allow-NaN": true
+                    }
+                },
+                {
+                    "check": "one-of",
+                    "variable": "Smoking history",
+                    "message": "Unknown value \"heavy smoker\" : must be one of ['heavy', 'former'] (non-case-sensitive)",
+                    "parameters": {
+                        "case-sensitive": false,
+                        "values": [
+                            "heavy",
+                            "former"
+                        ]
+                    }
+                }
+            ],
+            "warnings": []
+        },
+        {
+            "index": 2,
+            "row": {
+                "Patient ID": 3,
+                "Center": "Owkin",
+                "Date of Birth": "03/07/2005",
+                "Sex": "Male",
+                "date of diagnosis": "01/12/2015",
+                "Smoking history": "2",
+                "Pack years (PA)": "50 pks",
+                "Type of treatmetn": "Target therapy",
+                "name of treatment": "Dexamethasone",
+                "Line Of Treatment": "4",
+                "Date of PSA level": "01/07/2020",
+                "PSA level": "3..7012",
+                "ab Value 1": "6.1",
+                "Lab Value 2": "5.8",
+                "Lab Value 3": "12.2",
+                "Date of biobsy": "12/10/1990",
+                "Biopsy": "Lung",
+                "Status": NaN
+            },
+            "errors": [
+                {
+                    "check": "numeric",
+                    "variable": "PSA level",
+                    "message": "ValueError : could not convert string to float: '3..7012'",
+                    "parameters": {
+                        "allow-NaN": true
+                    }
+                },
+                {
+                    "check": "one-of",
+                    "variable": "Smoking history",
+                    "message": "Unknown value \"2\" : must be one of ['heavy', 'former'] (non-case-sensitive)",
+                    "parameters": {
+                        "case-sensitive": false,
+                        "values": [
+                            "heavy",
+                            "former"
+                        ]
+                    }
+                }
+            ],
+            "warnings": []
+        },
+        {
+            "index": 3,
+            "row": {
+                "Patient ID": 4,
+                "Center": "Owkin",
+                "Date of Birth": "24/04//1995",
+                "Sex": "Male",
+                "date of diagnosis": "29/06/2001",
+                "Smoking history": "Former",
+                "Pack years (PA)": "50",
+                "Type of treatmetn": "chemo",
+                "name of treatment": "Carfilzomib",
+                "Line Of Treatment": "4",
+                "Date of PSA level": "06/07/2020",
+                "PSA level": "6.2135",
+                "ab Value 1": "2.6",
+                "Lab Value 2": "8.3",
+                "Lab Value 3": ".",
+                "Date of biobsy": "03/08/1992",
+                "Biopsy": "Luymph",
+                "Status": "Alive"
+            },
+            "errors": [
+                {
+                    "check": "date",
+                    "variable": "Date of Birth",
+                    "message": "ValueError : time data \"24/04//1995\" doesn't match format \"%d/%m/%Y\", at position 0. You might want to try:\n    - passing `format` if your strings have a consistent format;\n    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;\n    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.",
+                    "parameters": {
+                        "allow-NaN": false
+                    }
+                }
+            ],
+            "warnings": []
+        },
+        {
+            "index": 4,
+            "row": {
+                "Patient ID": 5,
+                "Center": "Owkin",
+                "Date of Birth": "28/11/1985",
+                "Sex": "Female",
+                "date of diagnosis": "08/10/1997",
+                "Smoking history": "1",
+                "Pack years (PA)": "unk",
+                "Type of treatmetn": "chemo",
+                "name of treatment": "Pomalidomide",
+                "Line Of Treatment": "6",
+                "Date of PSA level": "27/07/2020",
+                "PSA level": "3.2989",
+                "ab Value 1": "5.8",
+                "Lab Value 2": "4.1",
+                "Lab Value 3": "7.5",
+                "Date of biobsy": "15/09/2009",
+                "Biopsy": "Lymp nodes ",
+                "Status": "Alive"
+            },
+            "errors": [
+                {
+                    "check": "one-of",
+                    "variable": "Smoking history",
+                    "message": "Unknown value \"1\" : must be one of ['heavy', 'former'] (non-case-sensitive)",
+                    "parameters": {
+                        "case-sensitive": false,
+                        "values": [
+                            "heavy",
+                            "former"
+                        ]
+                    }
+                }
+            ],
+            "warnings": []
+        },
+        {
+            "index": 9,
+            "row": {
+                "Patient ID": 10,
+                "Center": "Owkin",
+                "Date of Birth": "/08/1996",
+                "Sex": "Female",
+                "date of diagnosis": "20/01/1975",
+                "Smoking history": "heavy",
+                "Pack years (PA)": "45",
+                "Type of treatmetn": "Target therapy",
+                "name of treatment": "Elotuzumab",
+                "Line Of Treatment": "1",
+                "Date of PSA level": "15/11/2019",
+                "PSA level": "6.4414",
+                "ab Value 1": "2.8",
+                "Lab Value 2": "8.1",
+                "Lab Value 3": "12.5",
+                "Date of biobsy": "07/02/1982",
+                "Biopsy": "Lung",
+                "Status": "Alive"
+            },
+            "errors": [
+                {
+                    "check": "date",
+                    "variable": "Date of Birth",
+                    "message": "ValueError : time data \"/08/1996\" doesn't match format \"%d/%m/%Y\", at position 0. You might want to try:\n    - passing `format` if your strings have a consistent format;\n    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;\n    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.",
+                    "parameters": {
+                        "allow-NaN": false
+                    }
+                }
+            ],
+            "warnings": []
+        },
+        {
+            "index": 16,
+            "row": {
+                "Patient ID": 17,
+                "Center": "Owkin",
+                "Date of Birth": "25/05/1984",
+                "Sex": "Female",
+                "date of diagnosis": "16/12/1990",
+                "Smoking history": "Former",
+                "Pack years (PA)": "15",
+                "Type of treatmetn": "IO",
+                "name of treatment": NaN,
+                "Line Of Treatment": "3",
+                "Date of PSA level": "unknow",
+                "PSA level": "juil-79",
+                "ab Value 1": "2.9",
+                "Lab Value 2": NaN,
+                "Lab Value 3": "9.9",
+                "Date of biobsy": "01/09/1984",
+                "Biopsy": "brain",
+                "Status": "Alive"
+            },
+            "errors": [
+                {
+                    "check": "numeric",
+                    "variable": "PSA level",
+                    "message": "ValueError : could not convert string to float: 'juil-79'",
+                    "parameters": {
+                        "allow-NaN": true
+                    }
+                }
+            ],
+            "warnings": []
+        },
+        {
+            "index": 18,
+            "row": {
+                "Patient ID": 19,
+                "Center": "Owkin",
+                "Date of Birth": "023/03/1978",
+                "Sex": "Male",
+                "date of diagnosis": "26/02/1999",
+                "Smoking history": "Former",
+                "Pack years (PA)": "unk",
+                "Type of treatmetn": "chemo",
+                "name of treatment": "Daratumumab + Pomalidomide + Dexamethasone",
+                "Line Of Treatment": "2",
+                "Date of PSA level": "21/12/2018",
+                "PSA level": "3.0493",
+                "ab Value 1": ".",
+                "Lab Value 2": NaN,
+                "Lab Value 3": "100",
+                "Date of biobsy": "02/12/1991",
+                "Biopsy": "Lung",
+                "Status": NaN
+            },
+            "errors": [
+                {
+                    "check": "date",
+                    "variable": "Date of Birth",
+                    "message": "ValueError : time data \"023/03/1978\" doesn't match format \"%d/%m/%Y\", at position 0. You might want to try:\n    - passing `format` if your strings have a consistent format;\n    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;\n    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.",
+                    "parameters": {
+                        "allow-NaN": false
+                    }
+                }
+            ],
+            "warnings": []
+        },
+        {
+            "index": 21,
+            "row": {
+                "Patient ID": 22,
+                "Center": "Owkin",
+                "Date of Birth": "21/003/1974",
+                "Sex": "Female",
+                "date of diagnosis": "12/05//1976",
+                "Smoking history": "Former",
+                "Pack years (PA)": "40",
+                "Type of treatmetn": "chemo",
+                "name of treatment": "Carfilzomib + Lenalidomide + Dexamethasone",
+                "Line Of Treatment": "1",
+                "Date of PSA level": "30/01/2019",
+                "PSA level": "7.1072",
+                "ab Value 1": "4.2",
+                "Lab Value 2": "3.6",
+                "Lab Value 3": "8.6",
+                "Date of biobsy": "13/10/2002",
+                "Biopsy": "Lung",
+                "Status": "Alive"
+            },
+            "errors": [
+                {
+                    "check": "date",
+                    "variable": "Date of Birth",
+                    "message": "ValueError : time data \"21/003/1974\" doesn't match format \"%d/%m/%Y\", at position 0. You might want to try:\n    - passing `format` if your strings have a consistent format;\n    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;\n    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.",
+                    "parameters": {
+                        "allow-NaN": false
+                    }
+                }
+            ],
+            "warnings": []
+        },
+        {
+            "index": 30,
+            "row": {
+                "Patient ID": 31,
+                "Center": "Owkin",
+                "Date of Birth": NaN,
+                "Sex": "Female",
+                "date of diagnosis": "12/02/2013",
+                "Smoking history": "Former",
+                "Pack years (PA)": "0",
+                "Type of treatmetn": "Target therapy",
+                "name of treatment": "Daratumumab + Cyclophosphamide + Dexamethasone",
+                "Line Of Treatment": "1",
+                "Date of PSA level": "15/11/2018",
+                "PSA level": "7.6914",
+                "ab Value 1": "2.5",
+                "Lab Value 2": "8.5",
+                "Lab Value 3": "10.5",
+                "Date of biobsy": "01/08/2012",
+                "Biopsy": "Lung",
+                "Status": "Alive"
+            },
+            "errors": [
+                {
+                    "check": "date",
+                    "variable": "Date of Birth",
+                    "message": "Value can not be NaN",
+                    "parameters": {
+                        "allow-NaN": false
+                    }
+                }
+            ],
+            "warnings": []
+        },
+        {
+            "index": 38,
+            "row": {
+                "Patient ID": 39,
+                "Center": "Owkin",
+                "Date of Birth": "NA/02/1986",
+                "Sex": "Female",
+                "date of diagnosis": "06/04/2011",
+                "Smoking history": "Former",
+                "Pack years (PA)": "unk",
+                "Type of treatmetn": "Target therapy",
+                "name of treatment": "Brentuximab vedotin",
+                "Line Of Treatment": "1",
+                "Date of PSA level": "13/07/2018",
+                "PSA level": "8.1264",
+                "ab Value 1": "5.6",
+                "Lab Value 2": "3.2",
+                "Lab Value 3": "15",
+                "Date of biobsy": "08/07/1986",
+                "Biopsy": "Lung",
+                "Status": "Alive"
+            },
+            "errors": [
+                {
+                    "check": "date",
+                    "variable": "Date of Birth",
+                    "message": "ValueError : time data \"NA/02/1986\" doesn't match format \"%d/%m/%Y\", at position 0. You might want to try:\n    - passing `format` if your strings have a consistent format;\n    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;\n    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.",
+                    "parameters": {
+                        "allow-NaN": false
+                    }
+                }
+            ],
+            "warnings": []
+        }
+    ]
+}
