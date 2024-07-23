@@ -1,0 +1,18 @@
+# Ignore Python bytecode files
+*.py[cod]
+
+# Ignore the __pycache__ directories
+__pycache__/
+
+# Ignore virtual environment directories
+venv/
+env/
+
+# Ignore other temporary files and directories
+*.log
+*.sqlite3
+*.bak
+.DS_Store
+
+# Local files not to share with repo
+/local/

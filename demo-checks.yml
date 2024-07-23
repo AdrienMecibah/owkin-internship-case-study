@@ -1,0 +1,28 @@
+"Patient ID": 
+ - name: numeric
+   parameters: 
+     allow-NaN: false
+
+"PSA level":
+  - name: numeric
+    parameters:
+      allow-NaN: true
+
+
+"Date of Birth":
+  - name: date
+    parameters:
+      allow-NaN: false
+
+"Date of biobsy":
+  - name: date
+    parameters:
+      allow-NaN: false
+  
+"Smoking history":
+  - name: one-of
+    parameters:
+      values: 
+        - "heavy"
+        - "former"
+      case-sensitive: false
