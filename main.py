@@ -13,9 +13,8 @@ def main():
 	dataset, checks = sys.argv[1:3]
 	assessment = curation.make_assessment(dataset, checks, output=os.path.join('curation-output', 'assessment.json'))
 	curated_df = curation.curate_from_assessment(dataset, assessment, output=os.path.join('curation-output', 'curated-dataset.csv'))
+	print(f'Curated dataset : \n{curated_df}')
 	curation.display_assessment(assessment, dataset)
-	print(curated_df)
-
 
 if __name__ == '__main__':
 	main()
