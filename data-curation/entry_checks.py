@@ -23,6 +23,5 @@ def check_born_before_exams(row):
 			except pd._libs.tslibs.parsing.DateParseError as exc:
 				continue
 			if dob > date:
-				print(f'\x1b[91m{dob=} > {date=}\x1b[39m')
 				# return CheckError(f'field "{name}", {date} predates date of birth {dob}')
 				return CheckWarning(f'field "{name}", {date} predates date of birth {dob}')
