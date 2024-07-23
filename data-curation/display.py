@@ -191,7 +191,7 @@ def display_assessment(assessment, dataset=None):
             )
         }
 
-        # Handle modal updates
+        # handle modal updates
         modal_body = list()
         if dash.callback_context.triggered and dash.callback_context.triggered[0]['prop_id'].split('.')[0] == 'bar-graph':
             variable = clickData['points'][0]['x']
@@ -213,10 +213,3 @@ def display_assessment(assessment, dataset=None):
         return bar_figure, is_open, modal_body, donut_figure
 
     app.run_server(debug=True)
-
-def main():
-    import sys
-    display_assessment(*sys.argv[1:])
-
-if __name__ == '__main__':
-    main()
