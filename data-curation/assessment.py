@@ -100,7 +100,7 @@ def make_assessment(dataset, checks, output=None):
 	return assessment
 
 
-def curate_from_assessment(dataset, assessment):
+def curate_from_assessment(dataset, assessment, output=None):
 	if type(dataset) == str:
 		df = open_csv(dataset)
 	else:
@@ -130,4 +130,10 @@ def curate_from_assessment(dataset, assessment):
 							break
 			if not fixed:
 				non_compliant_indexes.append(entry['index'])
-	return df.drop(non_compliant_indexes).copy()
+	result = df.drop(non_compliant_indexes).copy()
+	if output is not None:
+		if type(output) != str:
+			raise TypeError(f'curate_from_assessment : output must be str, not {type(output)}')
+		with open(output, 'w') as f:
+			f.write(result.to_csv(index=False))
+	return result

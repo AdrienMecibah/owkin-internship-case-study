@@ -1,0 +1,34 @@
+Patient ID,Center,Date of Birth,Sex,date of diagnosis,Smoking history,Pack years (PA),Type of treatmetn,name of treatment,Line Of Treatment,Date of PSA level,PSA level,ab Value 1,Lab Value 2,Lab Value 3,Date of biobsy,Biopsy,Status
+1,Owkin,10/02/1994,Male,13/08/2009,heavy,14,chemo,Lenalidomide,2,23/12/2019,6.0728,7.9,3.2,11.6,23/06/2005,Bone,Alive
+4,Owkin,24/04/1995,Male,29/06/2001,Former,50,chemo,Carfilzomib,4,06/07/2020,6.2135,2.6,8.3,.,03/08/1992,Luymph,Alive
+6,Owkin,27/03/1981,Male,17/03/1978,heavy,40,IO,Thalidomide,5,20/05/2020,6.5154,8.2,2.9,10.4,18/11/2012,Lung,Alive
+7,Externe,21/09/1988,Male,23/11/2012,heavy,unk,Target therapy,Cyclophosphamide,2,27/08/2020,,3.1,7.2,9.7,08/12/1981,Lung,Alive
+8,Owkin,06/06/1986,Female,.,heavy,21,chemo,Melphalan,2,21/09/2020,6.0291,4.9,3.7,,22/08/1982,Lung,Alive
+9,Owkin,15/01/1996,Male,06/09/1994,heavy,20,IO,Daratumumab,1,28/10/20020,6.3149,6.3,6.9,7.6,25/07/2011,Lung,Dead
+10,Owkin,01/08/1996,Female,20/01/1975,heavy,45,Target therapy,Elotuzumab,1,15/11/2019,6.4414,2.8,8.1,12.5,07/02/1982,Lung,Alive
+11,Owkin,16/11/1975,Male,31/07/2005,heavy,10,IO,Ixazomib,2,,6.8352,.,5.6,9.4,04/12/1994,Lung,
+12,Owkin,01/02/1995,Male,05/11/1992,heavy,unk,Target therapy,Prednisone,1,18/10/2019,7.2939,8.8,4.4,,08/04/1998,Lung,Alive
+13,Owkin,02/03/2005,Female,22/06/1987,heavy,15,chemo,VCD,1,30/09/2019,2.5719,,2.7,11.2,06/10/1981,plueura,Alive
+14,Externe,15/06/1979,Male,01/09/1979,heavy,22,IO,Vincristine,2,14/10/2019,6.3701,3.4,7.1,8.3,17/09/2002,brain,Death
+15,Owkin,06/08/1980,Female,17/05/2010,Former,40,Target therapy,Doxorubicin,5,15/10/2019,6.0318,4.7,3.8,12.1,23/03/2010,brain,Alive
+16,Owkin,28/01/1990,Male,07/08/2002,Former,unk,chemo,Rituximab,6,29/10/2020,,6.4,6.7,10.3,27/11/1999,brain,Alive
+18,Externe,19/05/2012,Female,04/03/1981,Former,unk,Target therapy,,1,16/11/2020,2.5402,5.2,5.2,7.8,16/04/1993,brain,Alive
+19,Owkin,23/03/1978,Male,26/02/1999,Former,unk,chemo,Daratumumab + Pomalidomide + Dexamethasone,2,21/12/2018,3.0493,.,,100,02/12/1991,Lung,
+20,Owkin,08/08/1999,Female,28/11/1973,Former,15,IO,Daratumumab + Lenalidomide + Dexamethasone,4,05/02/2013,7.3019,7.5,,,23/02/2011,Lung,Alive
+21,Owkin,24/09/1978,Female,10/07/2016,Former,unk,Target therapy,Elotuzumab + Lenalidomide + Dexamethasone,2,31/01/2019,7.2491,3.9,7.3,12.3,07/06/1994,Lung,Dead
+22,Owkin,21/03/1974,Female,12/05//1976,Former,40,chemo,Carfilzomib + Lenalidomide + Dexamethasone,1,30/01/2019,7.1072,4.2,3.6,8.6,13/10/2002,Lung,Alive
+23,Owkin,15/02/1987,Female,19/10/1984,Former,40,chemo,Bortezomib + Thalidomide + Dexamethasone,1,16/05/2019,3.3903,6.5,6.2,11.5,29/06/2017,Lung,Alive
+24,Externe,12/06/1986,Male,15/04/2003,Former,35,IO,Ixazomib + Lenalidomide + Dexamethasone,6,22/08/2019,7.0809,2.7,8.2,10.1,17/01/1976,Lung,Alive
+25,Owkin,04/05/1986,Female,02/09/1996,Former,15,chemo,Pomalidomide + Dexamethasone,3,18/09/2019,7.0209,5.7,5.4,9.5,19/05/2017,Lung,Dead
+26,Owkin,22/07/1976,Female,29/01/1977,Former,70,chemo,Daratumumab + Bortezomib + Dexamethasone,1,,7.2991,8.4,4.6,7.4,26/04/2011,Lung,Alive
+27,Externe,14/09/1997,Female,03/12/2006,Former,unk,IO,Daratumumab + Carfilzomib + Dexamethasone,,19/06/2019,,7.1,2.5,10.2,09/05/1973,Lung,Alive
+28,Owkin,30/06/1995,Female,09/08/1982,Former,unk,Target therapy,VRD,1,16/07/2019,7.8911,3.3,7.7,,21/03/1975,Lung,Alive
+29,Owkin,28/12/1979,Female,22/11/1993,Former,50,chemo,Bortezomib + Cyclophosphamide + Dexamethasone,/1,19/08/2019,,,3.9,12.2,06/01/2015,Lung,Dead
+30,Owkin,17/11/1993,Female,01/06/1974,Former,34,IO,Carfilzomib + Cyclophosphamide + Dexamethasone,1,01/11/2019,7.4004,6.2,6.6,8.7,11/12/1993,Lung,Alive
+32,Owkin,13/09/1982,Female,27/07/1986,Former,60,IO,Lenalidomide + Cyclophosphamide + Dexamethasone,1,31/10/2018,7.4202,5.1,5.7,9.9,19/12/2010,Lung,Dead
+33,Owkin,11/03/1997,Male,18/05/2000,Former,15,Target therapy,Bortezomib + Melphalan + Prednisone,1,28/12/2017,7.1353,8.5,,8.4,20/06/1977,Lung,Dead
+34,Owkin,05/01/1983,Female,28/08/01998,Former,30,chemo,Carfilzomib + Melphalan + Prednisone,1,12/01/2018,7.9733,7.4,2.6,11.3,04/06/1996,Lung,Alive
+35,Owkin,05/12/1977,Female,06/12/1972,Former,90,IO,Daratumumab + Melphalan + Prednisone,,05/03/2018,7.2011,10:02,7.8,8.1,06/08/1987,Lung,Alive
+36,Owkin,24/03/1973,Female,25/01/2009,Former,unk,Target therapy,Lenalidomide + Melphalan + Prednisone,1,25/09/2017,7.9526,4.4,3.5,11.1,09/07/1986,Lung,Alive
+37,Owkin,01/11/1990,Female,09/04/1988,Former,unk,chemo,Gemtuzumab ozogamicin,1,15/05/2018,8.1286,6.7,6.4,9.3,24/06/2011,Lung,Alive
+38,Externe,25/11/2001,Female,13/09/1971,Former,40,IO,Rd,1,23/05/2018,7.5636,2.4,8.0,12.4,01/04/1977,Lung,Alive
