@@ -1,7 +1,8 @@
 
 import pandas as pd
-
+import os
 def open_csv(filename):
+	return pd.read_csv(filename, sep=';')
 	if not os.path.exists(filename):
 		raise FileNotFoundError(filename)
 	try:
@@ -13,7 +14,7 @@ def open_csv(filename):
 		df_comma = pd.read_csv(filenmae, sep=',')
 	except Exception as exc:
 		e = exc
-		df_colon = None
+		df_comma = None
 	if df_colon is None and df_comma is None:
 		raise e
 	if df_colon is None and df_comma is not None:

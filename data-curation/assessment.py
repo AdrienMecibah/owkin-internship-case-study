@@ -150,7 +150,7 @@ def curate_from_assessment(dataset, assessment, output=None):
             fixed = False
             for name, check in Check.instances.items():
                 if name == error['check']:
-                    for curator in check.curators:
+                    for curator in check.fixes:
                         curated, new_value = curator(df[error['variable']][entry['index']], error['parameters'])
                         if curated:
                             df.loc[entry['index'], error['variable']] = new_value
